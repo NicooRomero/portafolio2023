@@ -1,0 +1,42 @@
+.portfolio-list {
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    .ant-list-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .ant-list-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 30px;
+            justify-items: center;
+        }
+        .ant-card {
+            width: 200px!important
+        }
+    }
+
+    .ant-list-split .ant-list-item {
+        border-bottom: 0px
+    }
+
+    @media screen and (max-width: 440px) {
+        .ant-list-items {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+        }
+        .ant-card {
+            width: 150px!important
+        }
+    }
+}

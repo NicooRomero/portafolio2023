@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1600 1119">
+        <defs>
+          <rect id="bg-a" width="1600" height="1119" x="0" y="0"/>
+          <filter id="bg-b" width="123.8%" height="131.9%" x="-11.9%" y="-16%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50"/>
+          </filter>
+          <filter id="bg-d" width="118.2%" height="123.8%" x="-9.1%" y="-11.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50"/>
+          </filter>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+          <mask id="bg-c" fill="#fff">
+            <use xlink:href="#bg-a"/>
+          </mask>
+          <use fill="#FFF" opacity=".522" xlink:href="#bg-a"/>
+          <path fill="#EBF0FF" d="M379.526797,661 C668.110379,661 290.623801,272.99701 902.053595,191 C1513.48339,109.00299 668.110379,-279 379.526797,-279 C90.9432158,-279 -143,-68.5738324 -143,191 C-143,450.573832 90.9432158,661 379.526797,661 Z" filter="url(#bg-b)" mask="url(#bg-c)"/>
+          <path fill="#d6fffe8c" d="M1547.16706,1261 C1934.22641,1261 2248,978.715535 2248,630.5 C2248,282.284465 1934.22641,0 1547.16706,0 C1160.10772,0 1563.06952,532.244366 846.334127,630.5 C129.598732,728.755634 1160.10772,1261 1547.16706,1261 Z" filter="url(#bg-d)" mask="url(#bg-c)"/>
+          <path fill="#FFF" fill-rule="nonzero" d="M1323,223 C1032.49822,223 797,458.498222 797,749 C797,1039.50178 1032.49822,1275 1323,1275 C1613.50178,1275 1849,1039.50178 1849,749 C1849,458.498222 1613.50178,223 1323,223 Z M1323,423 C1503.04483,423 1649,568.955172 1649,749 C1649,929.044828 1503.04483,1075 1323,1075 C1142.95517,1075 997,929.044828 997,749 C997,568.955172 1142.95517,423 1323,423 Z" mask="url(#bg-c)"/>
+        </g>
+      </svg>

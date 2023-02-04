@@ -1,0 +1,22 @@
+.ant-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-edit-post-form__input{
+    margin-bottom: 40px;
+}
+
+.ant-upload {
+    width: 100%;
+}
+
+.upload-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ant-upload-list-picture-container {
+    margin-bottom: 30px;
+}

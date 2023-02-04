@@ -1,0 +1,23 @@
+@import '../../../../scss/index.scss';
+
+.form-add {
+    .form-add_avatar {
+        .ant-form-item-control-input-content {
+            display: flex;
+            align-items: center;
+        }
+        .ant-form-item-control-input {
+            margin: 0 auto;
+        }
+        &-h2 {
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    .btn-submit {
+        width: 100%;
+    }
+    .ant-btn {
+        width: 225px;
+    }
+}

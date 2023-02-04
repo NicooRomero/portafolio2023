@@ -1,0 +1,113 @@
+.portfolio-main {
+    width: 90%;
+    margin: 150px auto;
+    // background-image: url(../../../assets/img//bg001.png);
+    // background-position: center center;
+    // background-size: 1000px auto;
+    // transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+    &__head {
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 40px;
+        }
+    }
+
+    &__content {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+
+        &-git {
+            .ant-card {
+                margin: 0 auto;
+            }
+
+            h3 {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-style: italic;
+            }
+
+            h2 {
+                text-align: center;
+                margin-top: 20px;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 700;
+                border-bottom: 2px solid #1890ff;
+                width: 7%;
+            }
+
+            &__btn {
+                display: flex;
+                justify-content: center;
+            }
+
+            @mixin key_frame($name, $duration, $count, $direction) {
+                @keyframes arrow-jump {
+                    0% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 1;
+                        -webkit-transform: translateX(3px);
+                        -moz-transform: translateX(3px);
+                        transform: translateX(3px);
+                    }
+                }
+
+                animation-name: $name;
+                animation-duration: $duration;
+                animation-iteration-count: $count;
+                animation-direction: $direction;
+            }
+
+            svg {
+                opacity: 100;
+                transition: all .3s linear;
+                @include key_frame(arrow-jump, .4s, infinite, alternate);
+            }
+        }
+
+        &-proyects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+        .prev-portfolio {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        &__content {
+            width: 100%;
+            &-git {
+                width: 100%;
+                p {
+                    width: 26%;
+                }
+            }
+            .prev-portfolio {
+                .ant-image {
+                    img {
+                        width: 80%; 
+                    }
+                }
+            }
+        }
+    }
+}

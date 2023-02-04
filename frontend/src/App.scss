@@ -1,0 +1,22 @@
+@import './scss/index.scss';
+
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.success {
+    border: 1px solid $success;
+    background-color: $background-success !important;
+}
+
+.error {
+    border: 1px solid $error;
+    background-color: $background-error !important;
+}

@@ -1,0 +1,40 @@
+.contact {
+    width: 90%;
+    margin: 100px auto;
+
+    &-content {
+        display: grid;
+        grid-template-columns: 35% 30%; //45% 30%
+        justify-content: center;
+        align-items: center;
+        justify-items: stretch;
+        
+        @media (max-width: 1400px) {
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 1440px) {
+            grid-template-columns: 45% 30%;
+        }
+
+        @media screen and (max-width: 440px) {
+            display: flex;
+            flex-direction: column-reverse;
+            img {
+                width: 300px;
+            }
+        }
+
+        &__text {
+            h2 {
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1;
+            }
+            h3 {
+                font-style: italic;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

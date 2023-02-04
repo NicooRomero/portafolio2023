@@ -1,0 +1,29 @@
+@import '../../../scss/index.scss';
+.login-form {
+    margin-top: 15px;
+    .ant-form-item:last-of-type {
+        margin: 0;
+    }
+    &__input {
+        .ant-input-prefix {
+            i {
+                font-size: 0em +22px / $defaultFontSize;
+            }
+            input {
+                font-size: 0em +20px / $defaultFontSize;
+                padding: 20px 20px 20px 40px;
+                &:focus {
+                    border-color: $primary-color;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    &-button {
+        width: 100%;
+        font-size: 0em + 22px / $defaultFontSize;
+        color: $font-light;
+        height: 40px;
+        margin-top: 20px;
+    }
+}

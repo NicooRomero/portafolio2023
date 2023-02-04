@@ -1,0 +1,138 @@
+.cursos {
+
+    &-description {
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h2 {
+            width: 50%;
+            margin: 0 auto;
+            font-style: italic;
+        }
+    }
+
+    &-badges {
+        margin: 50px auto;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h2 {
+            width: 50%;
+            margin: 0 auto 50px auto;
+            font-style: italic;
+        }
+    }
+
+    &-certificados {
+        margin: 50px auto;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h2 {
+            width: 50%;
+            margin: 0 auto 50px auto;
+            font-style: italic;
+        }
+    }
+
+    .ant-row {
+        .ant-col {
+            .ant-card {
+                .ant-card-body {
+                    .ant-list {
+                        .ant-list-items {
+                            display: flex;
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        &-description {
+            h2 {
+                width: 100%;
+            }
+        }
+
+        .ant-row {
+            .ant-col-20 {
+                max-width: 100%;
+                .ant-card {
+                    .ant-card-head {
+                        padding: 0;
+                    }
+                    .ant-card-body {
+                        .ant-list {
+                            .ant-list-items {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .ant-list-item {
+                                .ant-card-cover {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .ant-card-meta {
+                            .ant-card-meta-description {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-badges {
+    
+            h2 {
+                width: 100%;
+                margin: 0 auto 50px auto;
+                font-style: italic;
+            }
+
+            .ant-carousel .slick-slide {
+                width: 80px !important ;
+            }
+            .ant-carousel .slick-track {
+                width: 1558px !important;
+            }
+            .ant-image-img {
+                width: 70%;
+            }
+        }
+
+        &-certificados {
+            h2 {
+                width: 100%;
+                margin: 0 auto 50px auto;
+                font-style: italic;
+            }
+
+            .ant-carousel .slick-slide {
+                width: 190px !important ;
+            }
+            .ant-carousel .slick-track {
+                width: 4558px !important;
+            }
+            .ant-image-img {
+                width: 50% !important;
+            }
+        }
+    }
+}

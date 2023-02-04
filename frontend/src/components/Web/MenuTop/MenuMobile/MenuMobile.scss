@@ -1,0 +1,118 @@
+.navbar {
+    height: 60px;
+    background-color: #e8fffecc;
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        &-logo {
+            h1 {
+                font-weight: 700;
+            }
+        }
+
+        &-menu_icon {
+            display: none;
+        }
+
+        &-nav-elements {
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+            }
+
+            ul li:not(:last-child) {
+                margin-right: 60px;
+            }
+
+            ul a {
+                font-size: 16px;
+                font-weight: 400;
+                color: #2f234f;
+                text-decoration: none;
+            }
+
+            ul a.active {
+                color: #574c4c;
+                font-weight: 500;
+                position: relative;
+            }
+
+            ul a.active::after {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #574c4c;
+            }
+
+            ul li {
+                margin-right: unset;
+                margin-top: 22px;
+            }
+        }
+
+        @media screen and (max-width: 440px) {
+            &-menu_icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            &-nav_elements {
+                position: absolute;
+                right: 0;
+                top: 60px;
+                background-color: #fef7e5;
+                width: 0px;
+                height: calc(100vh - 60px);
+                transition: all 0.3s ease-in;
+                overflow: hidden;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                }
+
+                ul li {
+                    margin-right: unset;
+                    margin-top: 22px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &-nav_elements.active {
+                width: 270px;
+            }
+        }
+    }
+}
+
+.ant-modal-content  {
+    top: -300px;
+    width: 100%;
+
+    .ant-modal-body {
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}

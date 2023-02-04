@@ -1,0 +1,10 @@
+.post-list {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.ant-btn {
+    position: inherit;
+}

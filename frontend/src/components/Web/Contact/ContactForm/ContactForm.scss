@@ -1,0 +1,103 @@
+.contact-form {
+    margin-bottom: 100px;
+
+    h2 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 400;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-evenly;
+
+        &-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 500px;
+            margin: 20px 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            @media (max-width: 1400px) {
+                margin: 20px 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .ant-form-item {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 0;
+
+                    .ant-form-item-label {
+                        text-align: left;
+                    }
+
+                    input {
+                        border-radius: 5px;
+                    }
+                }
+
+                Button {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-alt {
+            margin: 30px 0;
+            @media (max-width: 1400px) {
+                margin: 20px 20px;
+            }
+
+            Image {
+                margin-bottom: 50px;
+            }
+
+            &__num {
+                margin-top: 30px;
+                h3 {
+                    font-weight: 700;
+                    font-style: italic;
+                    margin: 0;
+                }
+                span {
+                    margin-right: 10px;
+                }
+                &-icon {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        .ant-col-16 {
+            max-width: 100% !important;
+        }
+
+        &__body {
+            flex-direction: column-reverse;
+
+            &-form {
+                width: 90%;
+            }
+            &-alt {
+                .ant-image {
+                    width: 327px !important;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
+    }
+}

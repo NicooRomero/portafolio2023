@@ -1,0 +1,13 @@
+.ant-row {
+    justify-content: space-around;
+
+    .ant-card {
+        
+        &-actions {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

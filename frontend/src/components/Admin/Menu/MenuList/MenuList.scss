@@ -1,0 +1,45 @@
+@import '../../../../scss/index.scss';
+
+.menu-web-list {
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        Button {
+            position: inherit;
+        }
+    }
+    &__items {
+        padding: 10px;
+        border-radius: 5px;
+        background: white;
+        .ant-list-item {
+            padding: 5px;
+        }
+    }
+    .ant-list-item {
+        padding: 10px;
+        background: white;
+        height: 80px;
+
+        .ant-list-item-meta {
+            align-items: center!important;
+            .ant-avatar {
+                width: 45px;
+                height: 45px;
+                position: inherit;
+            }
+        }
+        .ant-list-item_btn {
+            padding: 30px;
+        }
+    }
+}
+
+.spin {
+    margin: 50px 400px;
+    padding: 30px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}

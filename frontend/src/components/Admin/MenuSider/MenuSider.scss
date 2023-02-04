@@ -1,0 +1,24 @@
+@import '../../../scss/index.scss';
+.menu-sider {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 65px;
+}
+
+.ant-layout-sider,
+.ant-menu {
+    background: #3d4246 !important;
+    box-shadow: 1px 3px 5px 0px rgb(0 0 0 / 61%);
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: $primary-color;
+    font-weight: bold;
+    i {
+        font-weight: bold;
+    }
+}

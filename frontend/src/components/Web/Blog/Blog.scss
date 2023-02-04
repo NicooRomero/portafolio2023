@@ -1,0 +1,108 @@
+.blog-personal {
+    width: 1200px;
+    padding: 70px;
+    border-bottom-right-radius: 100px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    margin: 0 auto;
+
+    .blog-personal__main {
+        display: flex;
+        justify-content: center;
+
+        &-title {
+            width: 500px;
+            
+            &__desc {
+                margin: 50px auto;
+                h2 {
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1;
+                }
+
+                h3 {
+                    font-style: italic;
+                    margin-bottom: 20px;
+                }
+
+                Button {
+                    color: #1890ff;
+                    border-radius: 3px;
+                }
+            }
+            
+        }
+
+        &-latest {
+            width: 500px;
+
+            p {
+                font-weight: 700;
+                border-bottom: 2px solid #13c2c2;
+                width: 18%;
+            }
+        }
+
+        &-pinned {
+            width: 1000px;
+            margin: 0 auto;
+
+            p {
+                font-weight: 700;
+                border-bottom: 2px solid #1890ff;
+                width: 7%;
+            }
+
+            .ant-list-items {
+                display: flex;
+                justify-content: center;
+                
+
+                .ant-list-item {
+                    width: 333px;
+                    border-bottom: none;
+
+                    .ant-avatar {
+                        border-radius: 0;
+                        display: inline;
+
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ant-avatar {
+            border-radius: 0;
+            display: inline;
+
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .blog-personal {
+        width: 90%;
+        padding: 20px;
+
+        .blog-personal__main {
+            &-latest {
+                display: none;
+            }
+            &-pinned {
+                width: 100%;
+                .ant-list-items {
+                    flex-direction: column;
+                    .ant-list-item-meta {
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

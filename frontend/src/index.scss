@@ -1,0 +1,17 @@
+@import './scss/index.scss';
+body {
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fdfdfd;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1b243f;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

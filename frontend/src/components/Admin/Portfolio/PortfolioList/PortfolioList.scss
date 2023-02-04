@@ -1,0 +1,26 @@
+.proyects-list {
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        Button {
+            position: inherit;
+        }
+    }
+    &__items {
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+    .ant-list-item {
+        border-bottom: 1px solid #f0f0f0;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .ant-list-item-meta {
+        &-description {
+            color: #00000073;
+        }
+    }
+}

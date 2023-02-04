@@ -1,0 +1,38 @@
+@import '../../../../scss/index.scss';
+
+.web-courses {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.courses-web__header {
+    margin-bottom: 10px;
+}
+
+.courses-list {
+    img {
+        border-radius: 10px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    &__info {
+        &-cat {
+                display: flex;
+                h4 {
+                    margin-right: 5px;
+                }
+                .h4Last {
+                    margin-left: 20px;
+                }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .anticon-edit {
+        color: #2f54eb;
+    }
+    .anticon-delete {
+        color: #f5222d;
+    }
+}

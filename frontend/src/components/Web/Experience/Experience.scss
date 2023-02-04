@@ -1,0 +1,118 @@
+.exp-section {
+    width: 90%;
+    margin: 20px auto;
+
+    h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+        overflow: hidden;
+        padding: 50px;
+        margin: 20px auto;
+        border-radius: 15px;
+        background-color: #1B243F;
+        transition: all .3s linear;
+
+        &:before {
+            margin-top: 280px;
+            height: 167px;
+            left: 40%;
+            width: 167px;
+            background: #42517e;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            mix-blend-mode: screen;
+            opacity: .6;
+            position: absolute;
+            z-index: 4;
+            transition: all .3s linear;
+        }
+
+        &::after {
+            height: 167px;
+            right: 190px;
+            width: 167px;
+            margin-top: -254px;
+            background: #42517e;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            mix-blend-mode: screen;
+            opacity: 0.6;
+            position: absolute;
+            z-index: 4;
+            transition: all .3s linear;
+        }
+
+        h2 {
+            color: #ffff;
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            color: #ffff;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            color: #ffff;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            width: 125px;
+            border-bottom: 1px solid #ffff;
+        }
+
+        img {
+            width: 15%;
+            padding: 15px;
+            border-radius: 20px;
+            background-color: #ffff;
+        }
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            transition: all .3s linear;
+
+            &::after,
+            &::before {
+                opacity: 0;
+                transition: all .3s linear;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .exp-section {
+        width: 100%;
+
+        img {
+            display: none;
+        }
+
+        &__desc {
+            h3 {
+                font-size: 18px;
+            }
+            h4 {
+                font-size: 12px;
+            }
+        }
+
+    }
+}

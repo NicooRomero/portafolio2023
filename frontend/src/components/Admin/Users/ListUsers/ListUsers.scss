@@ -1,0 +1,42 @@
+@import '../../../../scss/index.scss';
+
+.add-user_btn {
+    margin-bottom: 10px;
+}
+.ant-list {
+    position: inherit;
+    .ant-spin-nested-loading {
+        position: inherit;
+        .ant-spin-container {
+            position: inherit;
+            transition: opacity .3s;
+        }
+    }
+}
+.user-list {
+    .ant-list-item {
+        padding: 10px;
+        background: white;
+        height: 80px;
+
+        .ant-list-item-meta {
+            align-items: center!important;
+            .ant-avatar {
+                width: 45px;
+                height: 45px;
+                position: inherit;
+            }
+        }
+        .ant-list-item_btn {
+            padding: 30px;
+        }
+    }
+}
+
+.spin {
+    margin: 50px 400px;
+    padding: 30px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
