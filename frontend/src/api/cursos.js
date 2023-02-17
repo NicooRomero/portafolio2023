@@ -14,7 +14,7 @@ export function GetCursos() {
 }
 
 export function GetCursosDev() {
-    let res = clientAxios.get('/cursos?category=628e4f98368fdea001652489')
+    let res = clientAxios.get('/cursos?category=63ec301fe65349c39b657db6')
         .then(response => {
             return response.data.cursosList;
         })
@@ -26,7 +26,7 @@ export function GetCursosDev() {
 }
 
 export function GetCursosCib() {
-    let res = clientAxios.get('/cursos?category=628e4f78368fdea001652486')
+    let res = clientAxios.get('/cursos?category=63ec2fd0e65349c39b657db5')
         .then(response => {
             return response.data.cursosList;
         })

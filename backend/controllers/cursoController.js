@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 exports.getCursos = async (req, res) => {
 
     // obtener cruso filtrando por categoria
-    // ejemplo endopoint: http://localhost:4000/api/v1/cursos?category=628e4f78368fdea001652486
+    // ejemplo endpoint: http://localhost:4000/api/v1/cursos?category=628e4f78368fdea001652486
     let filter = {};
 
     if(req.query.category) {
@@ -15,7 +15,7 @@ exports.getCursos = async (req, res) => {
     const cursosList = await Curso.find(filter).populate('category').sort({ dateCreated: -1 });
     
 
-    if(cursosList.length === 0) {
+    if(!cursosList) {
         return res.status(400).send({ message: 'No existe ningún curso.' });
     }
 

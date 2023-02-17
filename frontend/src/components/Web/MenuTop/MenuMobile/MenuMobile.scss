@@ -99,20 +99,22 @@
             &-nav_elements.active {
                 width: 270px;
             }
+
+            .ant-modal-content  {
+                top: -300px;
+                width: 100%;
+            
+                .ant-modal-body {
+                    ul {
+                        list-style: none;
+                    }
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
         }
     }
 }
 
-.ant-modal-content  {
-    top: -300px;
-    width: 100%;
 
-    .ant-modal-body {
-        ul {
-            list-style: none;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    }
-}

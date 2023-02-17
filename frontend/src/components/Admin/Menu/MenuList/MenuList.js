@@ -66,11 +66,22 @@ const MenuList = (props) => {
             });
     }
 
-    if(menu.length === 0) {
+    if(!menu) {
         return (
+            <div className='menu-web-list'>
+                <div className="menu-web-list__header">
+                    <Button
+                        type="primary"
+                        className='add-menu_btn'
+                        onClick={addMenu}
+                        >
+                        <MenuOutlined />Nuevo Menu
+                    </Button>
+                </div>
             <Space size="middle" className="spin">
                 <Spin size="large" tip='Cargando lista de usuarios....' />
             </Space>
+            </div>
         )
     } else {
         return (

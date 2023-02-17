@@ -20,7 +20,7 @@ const style = {
 };
 
 const Home = () => {
-    return (  
+    return (
         <>
             <MainBanner />
             <About />

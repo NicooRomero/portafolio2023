@@ -8,7 +8,7 @@ exports.getProjects = async (req, res) => {
 
         const projectsList = await Portfolio.find().sort({ dateCreated: -1 }).limit(limit);
 
-        if (projectsList.length === 0) return res.status(400).send({ message: 'No existe ningún proyecto.' });
+        if (!projectsList) return res.status(400).send({ message: 'No existe ningún proyecto.' });
 
         return res.status(200).send({ projectsList });
 
@@ -16,7 +16,7 @@ exports.getProjects = async (req, res) => {
 
     const projectsList = await Portfolio.find().sort({ dateCreated: -1 });
 
-    if (projectsList.length === 0) return res.status(400).send({ message: 'No existe ningún proyecto.' });
+    if (!projectsList) return res.status(400).send({ message: 'No existe ningún proyecto.' });
 
     return res.status(200).send({ projectsList });
 

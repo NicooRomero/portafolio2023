@@ -1,7 +1,7 @@
 @import '../../../scss/index.scss';
 .login-form {
     margin-top: 15px;
-    .ant-form-item:last-of-type {
+    .ant-form-item {
         margin: 0;
     }
     &__input {

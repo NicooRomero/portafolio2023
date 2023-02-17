@@ -4,7 +4,7 @@ exports.getMenus = async (req, res) => {
 
     const menuList = await Menu.find();
 
-    if(menuList.length === 0) {
+    if(!menuList) {
         return res.status(400).send({ message: 'No hay usuarios registrados'});
     }
 

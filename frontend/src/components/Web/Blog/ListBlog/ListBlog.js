@@ -3,6 +3,7 @@ import { Spin, List, notification } from 'antd';
 import { Link } from 'react-router-dom';
 import { LoadingOutlined } from '@ant-design/icons';
 import moment from 'moment';
+import 'moment/locale/es';
 import { GetPosts } from '../../../../api/posts';
 import './ListBlog.scss';
 

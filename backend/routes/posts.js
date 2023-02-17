@@ -28,7 +28,7 @@ const storage = multer.diskStorage({
     }
 })
 
-const upload = multer({ storage });
+const upload = multer({ storage, limits: { fieldSize: 2 * 1024 * 1024 } });
 
 router.get('/', postController.getPosts);
 router.get('/get-post/:url', postController.getPost);

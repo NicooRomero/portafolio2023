@@ -29,8 +29,8 @@ const ListPortfolio = (props) => {
                                 />
                             }
                             actions={[
-                                <EyeOutlined key="eye" />,
-                                <GithubOutlined key="git" />
+                                <a href={item.url} target="_blank" rel="noreferrer"><EyeOutlined key="eye" /></a>,
+                                <a href={item.git} target="_blank" rel="noreferrer"><GithubOutlined key="git" /></a> 
                             ]}
                         >
                             <Meta
